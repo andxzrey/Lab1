@@ -148,7 +148,7 @@ namespace Lab1
         public void PrintTeacherInfo()
         {
             Console.BackgroundColor = ConsoleColor.DarkRed;
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine($"Information about teacher:");
             Console.ResetColor();
             Console.WriteLine($"Id: {ID}");
