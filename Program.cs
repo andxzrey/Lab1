@@ -151,7 +151,7 @@ namespace Lab1
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Information about teacher:");
             Console.ResetColor();
-            Console.WriteLine($"Id: {ID}");
+            Console.WriteLine($"Issd: {ID}");
             Console.WriteLine($"Name: {Name} \t| Surname: {Surname} \t| Patronymic: {Patronymic}");
             Console.WriteLine($"Age: {Age}");
             Console.WriteLine($"Department: {Department}\n");
