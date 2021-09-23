@@ -15,6 +15,7 @@ namespace Lab1
         Humanities,
         Law,
         Management,
+        Musics,
         Computer_Sciense_Math_and_Physics,
     }
 
@@ -83,13 +84,13 @@ namespace Lab1
             this.Age = Age;
             ID = Guid.NewGuid();
             this.group = group;
-            faculty = Char.GetNumericValue(group, 0);
+            faculty = int.Parse(group.Remove(group.IndexOf("-")));
             magister = group.Contains("M");
             course = Char.GetNumericValue(group, 3);
         }
         
         private string group;
-        private double faculty;
+        private int faculty;
         private double course;
         bool magister;
 
@@ -118,7 +119,7 @@ namespace Lab1
             Console.WriteLine($"Id: {ID}");
             Console.WriteLine($"Name: {Name} \t| Surname: {Surname} \t| Patronymic: {Patronymic}");
             Console.WriteLine($"Age: {Age}");
-            Console.WriteLine($"Faculty: {(Faculty)faculty}");
+            Console.Write($"Faculty: {(Faculty)faculty}\tGroup: {group}\t");
             if (magister)
             {
                 
@@ -166,7 +167,7 @@ namespace Lab1
         {
             Person a = new Person("Andrey", "Gluschuk", "Sergeevich", 19);
             Person b = new Person(Name: "Ivan", Surname: "Ivanov", "James", 12);
-            Student student = new Student("Student", "KSU", "", 19, "10-445");
+            Student student = new Student("Student", "KSU", "", 19, "4-145M");
             Teacher teacher = new Teacher("Teacher", "KSU", "", 26, "Maths");
 
             a.PrintPersonInfo();
