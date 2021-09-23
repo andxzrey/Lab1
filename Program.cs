@@ -148,10 +148,10 @@ namespace Lab1
         public void PrintTeacherInfo()
         {
             Console.BackgroundColor = ConsoleColor.DarkRed;
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine($"Information about teacher:");
             Console.ResetColor();
-            Console.WriteLine($"Issd: {ID}");
+            Console.WriteLine($"Id: {ID}");
             Console.WriteLine($"Name: {Name} \t| Surname: {Surname} \t| Patronymic: {Patronymic}");
             Console.WriteLine($"Age: {Age}");
             Console.WriteLine($"Department: {Department}\n");
